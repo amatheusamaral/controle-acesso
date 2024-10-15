@@ -1,0 +1,114 @@
+.header-image {
+    max-width: 100%; /* Faz a imagem responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0; /* Remove margens do body */
+    padding: 20px; /* Padding para o body */
+}
+
+h1 {
+    margin-top: 20px;
+    color: #146c9c; /* Cor do título */
+}   
+
+.container {
+    display: flex; /* Flexbox para alinhar as divs lado a lado */
+    justify-content: space-around; /* Espaçamento entre as divs */
+    align-items: flex-start; /* Alinha as divs ao topo */
+    margin: 20px auto; /* Margem para o container */
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do container */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    max-width: 900px; /* Largura máxima do container */
+}
+
+.cadastro, .entrada-saida {
+    background-color: #f9f9f9; /* Cor de fundo das divs */
+    border: 1px solid #ddd; /* Borda suave das divs */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Padding interno */
+    margin: 10px; /* Margem entre as divs */
+    flex: 1; /* Permite que as divs ocupem espaço igual */
+    max-width: 400px; /* Largura máxima para cada div */
+    transition: box-shadow 0.3s; /* Transição suave na sombra */
+}
+
+.cadastro:hover, .entrada-saida:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15); /* Sombra ao passar o mouse */
+}
+
+h2 {
+    color:#146c9c; /* Cor do subtítulo */
+}
+
+input[type="text"] {
+    width: 100%; /* Largura total do campo de entrada */
+    padding: 10px; /* Padding interno do input */
+    margin: 10px 0; /* Margem vertical dos inputs */
+    border: 1px solid #007bff91; /* Borda azul nos inputs */
+    border-radius: 4px; /* Bordas arredondadas dos inputs */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+button {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas do botão */
+    padding: 10px 15px; /* Padding interno do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+input[type="password"] {
+    width: 10%; /* Largura total do campo de senha */
+    padding: 10px; /* Padding interno do input */
+    margin: 10px 0; /* Margem vertical dos inputs */
+    border: 1px solid #007bff91; /* Borda azul nos inputs */
+    border-radius: 4px; /* Bordas arredondadas dos inputs */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+button {
+    background-color: #007BFF; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas do botão */
+    padding: 10px 15px; /* Padding interno do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+    margin-top: 10px; /* Margem superior para separar do campo de entrada */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+
+footer {
+    margin-top: 20px; /* Margem acima do rodapé */
+}
+
+footer a {
+    text-decoration: none; /* Remove sublinhado do link */
+    background-color: #28a745; /* Cor de fundo do botão do relatório */
+    color: white; /* Cor do texto do botão do relatório */
+    padding: 10px 20px; /* Padding do botão do relatório */
+    border-radius: 4px; /* Bordas arredondadas do botão do relatório */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+footer a:hover {
+    background-color: #218838; /* Cor ao passar o mouse no botão do relatório */
+}

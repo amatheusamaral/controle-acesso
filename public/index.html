@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Acesso</title>
+</head>
+<body>
+    <img src="images/fabapar.png" alt="Descrição da Imagem" class="header-image">
+
+    <h1>Controle de Acesso ao Laboratório</h1>
+    <div id="error-message" style="color: red;">
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const errorMessage = urlParams.get('errorMessage');
+            if (errorMessage) {
+                document.write(errorMessage);
+                // Oculta a mensagem após 2 segundos
+                setTimeout(() => {
+                    document.getElementById('error-message').style.display = 'none';
+                }, 2000);
+            }
+        </script>
+    </div>
+    
+    
+
+    <div class="container">
+        <div class="cadastro">
+            <h2>Registre-se Aqui</h2>
+            <form action="/adicionar-aluno" method="POST">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="text" name="matricula" placeholder="Matrícula" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div class="entrada-saida">
+            <h2>Entrada</h2>
+            <form action="/registrar-entrada" method="POST">
+                <input type="text" name="matricula" placeholder="Matrícula" required>
+                <button type="submit">Registrar Entrada</button>
+            </form>
+
+            <h2>Saída</h2>
+            <form action="/registrar-saida" method="POST">
+                <input type="text" name="matricula" placeholder="Matrícula" required>
+                <button type="submit">Registrar Saída</button>
+            </form>
+        </div>
+    </div>
+
+    <h2>Gerar Relatório</h2>
+    <form action="/gerar-relatorio" method="POST">
+        <input type="password" name="senha" placeholder="Digite a senha" required>
+        <button type="submit">Download do Relatório</button>
+    </form>
+</body>
+</html>
