@@ -112,3 +112,19 @@ footer a {
 footer a:hover {
     background-color: #218838; /* Cor ao passar o mouse no botão do relatório */
 }
+
+footer {
+    margin-top: 20px; /* Margem acima do rodapé */
+    padding: 20px; /* Padding interno do rodapé */
+    background-color: #fff; /* Cor de fundo do rodapé */
+    border-top: 1px solid #ddd; /* Borda superior para separação */
+    text-align: center; /* Centraliza o texto no rodapé */
+    font-size: 0.9em; /* Tamanho da fonte no rodapé */
+    color: #333; /* Cor do texto */
+}
+
+
+
+footer p {
+    margin: 10px 0; /* Margem acima e abaixo do parágrafo */
+}
